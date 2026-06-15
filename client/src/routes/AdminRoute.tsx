@@ -1,7 +1,11 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-const AdminRoute = ({ children, isAdmin }) => {
-    return isAdmin ? children : null;
-};
+const AdminRoute = () => {
+    return (
+        <Routes>
+            <Route path="/admin" element={<div>Admin Dashboard</div>} />
+        </Routes>
+    )
+}
 
-export default AdminRoute;
+export default AdminRoute

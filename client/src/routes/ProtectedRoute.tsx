@@ -1,7 +1,11 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-const ProtectedRoute = ({ children, isAuthenticated }) => {
-    return isAuthenticated ? children : null;
-};
+const AdminRoute = () => {
+    return (
+        <Routes>
+            <Route path="/admin" element={<div>Protected Route</div>} />
+        </Routes>
+    )
+}
 
-export default ProtectedRoute;
+export default AdminRoute
