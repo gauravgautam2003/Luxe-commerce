@@ -13,7 +13,7 @@ function serverRunning() {
     try {
         if(ENV.NODE_ENV === "development") {
             app.listen(PORT,() => {
-                console.log(`http:localhost:${PORT}`);
+                console.log(`http://localhost:${PORT}`);
             });
         }
     } catch (error) {
