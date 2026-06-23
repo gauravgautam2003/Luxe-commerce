@@ -1,20 +1,14 @@
-import AppRoutes from "./routes/AppRoutes";
-import AdminRoute from "./routes/ProtectedRoute";
-import ProtectedRoute  from "./routes/ProtectedRoute";
-import Navbar from "./components/common/Navbar";
-import Footer from "./components/common/Footer";
+import Navbar from "./components/Navbar";
+import UserRoute from "./routes/User_route";
 
 
-const App = () => {
-    return (
-        <div className="app">
-            <Navbar />
-            <AdminRoute />
-            <AppRoutes />
-            <ProtectedRoute />
-            <Footer />
-        </div>
-    )
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <UserRoute />
+    </div>
+  );
 }
 
-export default App
+export default App;
