@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import AI_page from "../pages/AI_page";
+import AI_search_page from "../pages/AI_search_page";
 
 
 
@@ -7,7 +7,7 @@ const User_route = () => {
   return (
     <div>
         <Routes>
-            <Route path="/signup" element={<AI_page />} />
+            <Route path="/" element={<AI_search_page />} />
         </Routes>
     </div>
   )
