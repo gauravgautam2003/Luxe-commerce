@@ -23,7 +23,7 @@ const Signup_page = () => {
         <div className="flex min-h-[calc(100vh-60px)] items-center justify-center bg-slate-50 px-4">
 
             <div className="my-4 w-full max-w-md">
-                <div className="absolute left-4 top-2 flex cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-2 text-gray-600 shadow-sm transition-colors hover:border-blue-400 hover:text-blue-600" onClick={() => navigate("/")}>
+                <div className="absolute left-4 top-4 flex cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-2 text-gray-600 shadow-sm transition-colors hover:border-blue-400 hover:text-blue-600" onClick={() => navigate("/")}>
                     <FaArrowLeft className="h-3.5 w-3.5" />
                     <p className="text-sm">Back</p>
                 </div>
