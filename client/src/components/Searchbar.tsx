@@ -1,6 +1,5 @@
-import { useMemo, useState } from "react";
 import { FiGift, FiMic, FiSearch, FiSend, FiTrendingDown, FiZap } from "react-icons/fi";
-import { products } from "../data/products";
+import useProductSearch from "../hooks/productSearch.hooks";
 
 const quickSearches = [
     { label: "Show new arrivals", icon: FiZap, query: "fashion" },
@@ -10,43 +9,7 @@ const quickSearches = [
 ];
 
 const Searchbar = () => {
-    const [query, setQuery] = useState("");
-    const [submittedQuery, setSubmittedQuery] = useState("");
-
-    const activeQuery = submittedQuery || query;
-    const normalizedQuery = activeQuery.trim().toLowerCase();
-
-    const filteredProducts = useMemo(() => {
-        if (!normalizedQuery) {
-            return [];
-        }
-
-        return products
-            .filter((product) => {
-                const searchableText = [
-                    product.name,
-                    product.category,
-                    product.description,
-                    product.price.toString(),
-                ]
-                    .join(" ")
-                    .toLowerCase();
-
-                return searchableText.includes(normalizedQuery);
-            })
-            .slice(0, 4);
-    }, [normalizedQuery]);
-
-    const submitSearch = (searchQuery = query) => {
-        const nextQuery = searchQuery.trim();
-
-        if (!nextQuery) {
-            return;
-        }
-
-        setQuery(nextQuery);
-        setSubmittedQuery(nextQuery);
-    };
+    const { query, submittedQuery, filteredProducts, submitSearch, updateQuery } = useProductSearch();
 
     return (
         <div className="w-full">
@@ -121,10 +84,7 @@ const Searchbar = () => {
                 <input
                     type="search"
                     value={query}
-                    onChange={(event) => {
-                        setQuery(event.target.value);
-                        setSubmittedQuery("");
-                    }}
+                    onChange={(event) => updateQuery(event.target.value)}
                     placeholder="Ask Luxe AI for product help..."
                     className="min-w-0 flex-1 bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-500"
                 />

@@ -1,13 +1,13 @@
-import { useState } from "react";
 import { RiRobot2Line } from "react-icons/ri";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { IoClose, IoSparklesOutline } from "react-icons/io5";
 import Searchbar from "../components/Searchbar";
 import NewDataComponents from "../components/NewDataComponents";
+import useDisclosure from "../hooks/disclosure.hooks";
 
 
 const AI_search_page = () => {
-    const [showNewData, setShowNewData] = useState(false);
+    const newDataDrawer = useDisclosure();
 
     return (
         <>
@@ -31,7 +31,7 @@ const AI_search_page = () => {
                                 <div className="mx-4 flex items-center gap-3">
                                     <button
                                         type="button"
-                                        onClick={() => setShowNewData(true)}
+                                        onClick={newDataDrawer.open}
                                         className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-slate-100 text-slate-700 shadow-sm transition hover:bg-white lg:hidden"
                                         aria-label="Show new product updates"
                                     >
@@ -57,12 +57,12 @@ const AI_search_page = () => {
                     </div>
                 </div>
 
-                {showNewData && (
+                {newDataDrawer.isOpen && (
                     <div className="fixed inset-0 z-50 lg:hidden">
                         <button
                             type="button"
                             className="absolute inset-0 bg-slate-950/40"
-                            onClick={() => setShowNewData(false)}
+                            onClick={newDataDrawer.close}
                             aria-label="Close new product updates"
                         />
                         <div className="absolute right-0 top-0 h-full w-[88vw] max-w-sm overflow-y-auto border-l border-slate-300 bg-slate-50 shadow-2xl">
@@ -70,7 +70,7 @@ const AI_search_page = () => {
                                 <p className="text-sm font-semibold text-slate-950">New for You</p>
                                 <button
                                     type="button"
-                                    onClick={() => setShowNewData(false)}
+                                    onClick={newDataDrawer.close}
                                     className="flex h-9 w-9 items-center justify-center rounded-full text-slate-700 transition hover:bg-slate-200"
                                     aria-label="Close"
                                 >
