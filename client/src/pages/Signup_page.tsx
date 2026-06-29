@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Signup_page = () => {
+const signupPage = () => {
     const { username, email, password, confirmPassword, state, setUsername, setEmail, setPassword, setConfirmPassword, setState } = userHooks();
 
     const navigate = useNavigate();
@@ -150,4 +150,4 @@ const Signup_page = () => {
     )
 }
 
-export default Signup_page
+export default signupPage

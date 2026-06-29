@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import AI_search_page from "../pages/AI_search_page";
+import AiSearchPage from "../pages/AI_search_page";
 
 
 
-const User_route = () => {
-  return (
-    <div>
-        <Routes>
-            <Route path="/" element={<AI_search_page />} />
-        </Routes>
-    </div>
-  )
+const userRoute = () => {
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<AiSearchPage />} />
+            </Routes>
+        </div>
+    )
 }
 
-export default User_route
+export default userRoute
