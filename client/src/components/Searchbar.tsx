@@ -105,10 +105,6 @@ const Searchbar = () => {
                     <FiSend className="h-5 w-5" />
                 </button>
             </form>
-
-            <p className="mt-3 text-center text-[11px] text-slate-500">
-                Apex AI can make mistakes. Check important product specs before purchasing.
-            </p>
         </div>
     );
 };
