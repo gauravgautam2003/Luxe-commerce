@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import UserRoute from "./routes/User_route";
-import AIRoute from "./routes/AI_route";
+import HomeRoute from "./routes/Home_route";
 import { useLocation } from "react-router-dom";
 
 
@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             {!hideNavbar && <Navbar />}
-            <AIRoute />
+            <HomeRoute />
             <UserRoute />
         </div>
     );
