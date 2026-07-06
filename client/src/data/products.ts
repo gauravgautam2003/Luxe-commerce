@@ -11,6 +11,36 @@ export type Product = {
 
 export const products: Product[] = [
     {
+        id: "p-bike",
+        name: "Aero-X Electric Commuter",
+        category: "Mobility",
+        price: 3499.0,
+        rating: 4.9,
+        inStock: true,
+        image: new URL("../assets/product_bike.png", import.meta.url).href,
+        description: "Ultra-light titanium electric commuter bike with a 100km range.",
+    },
+    {
+        id: "p-ceramic",
+        name: "Terra Ceramic Set",
+        category: "Home",
+        price: 75.0,
+        rating: 4.6,
+        inStock: true,
+        image: new URL("../assets/product_ceramic.png", import.meta.url).href,
+        description: "Minimal ceramic dining set with a refined hand-finished glaze.",
+    },
+    {
+        id: "p-backpack",
+        name: "Executive Leather Pack",
+        category: "Fashion",
+        price: 550.0,
+        rating: 4.7,
+        inStock: true,
+        image: new URL("../assets/fashion.jpg", import.meta.url).href,
+        description: "Premium leather backpack for work essentials and travel days.",
+    },
+    {
         id: "p-01",
         name: "Bluetooth Headset",
         category: "Electronics",

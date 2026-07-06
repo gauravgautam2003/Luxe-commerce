@@ -1,10 +1,167 @@
 @import "tailwindcss";
 
-*{
-    box-sizing: border-box;
+/* ─── Design System Tokens (from DESIGN.md) ─── */
+
+:root {
+    /* ── Primary ── */
+    --primary: #004ac6;
+    --primary-container: #2563eb;
+    --on-primary: #ffffff;
+    --on-primary-container: #eeefff;
+    --inverse-primary: #b4c5ff;
+
+    /* ── Secondary ── */
+    --secondary: #565e74;
+    --on-secondary: #ffffff;
+    --secondary-container: #dae2fd;
+    --on-secondary-container: #5c647a;
+
+    /* ── Tertiary ── */
+    --tertiary: #46566c;
+    --on-tertiary: #ffffff;
+
+    /* ── Surfaces ── */
+    --surface: #f7f9fb;
+    --surface-dim: #d8dadc;
+    --surface-bright: #f7f9fb;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f2f4f6;
+    --surface-container: #eceef0;
+    --surface-container-high: #e6e8ea;
+    --surface-container-highest: #e0e3e5;
+    --on-surface: #191c1e;
+    --on-surface-variant: #434655;
+    --inverse-surface: #2d3133;
+    --inverse-on-surface: #eff1f3;
+
+    /* ── Outline ── */
+    --outline: #737686;
+    --outline-variant: #c3c6d7;
+
+    /* ── Error ── */
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --error-container: #ffdad6;
+
+    /* ── Background ── */
+    --background: #f7f9fb;
+    --on-background: #191c1e;
+
+    /* ── Elevation Shadows ── */
+    --shadow-1: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-2: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --shadow-3: 0 12px 32px rgba(0, 0, 0, 0.12);
+
+    /* ── Spacing ── */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-2xl: 64px;
+    --container-max: 1280px;
+    --gutter: 24px;
+    --margin-mobile: 16px;
+
+    /* ── Rounded ── */
+    --rounded-sm: 0.25rem;
+    --rounded: 0.5rem;
+    --rounded-md: 0.75rem;
+    --rounded-lg: 1rem;
+    --rounded-xl: 1.5rem;
+    --rounded-full: 9999px;
 }
 
-body{
-    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* ─── Dark Theme ─── */
+[data-theme="dark"] {
+    --primary: #b4c5ff;
+    --primary-container: #003ea8;
+    --on-primary: #00174b;
+    --on-primary-container: #dbe1ff;
+    --inverse-primary: #004ac6;
+
+    --secondary: #bec6e0;
+    --on-secondary: #131b2e;
+    --secondary-container: #3f465c;
+    --on-secondary-container: #dae2fd;
+
+    --tertiary: #b7c8e1;
+    --on-tertiary: #0b1c30;
+
+    --surface: #111318;
+    --surface-dim: #111318;
+    --surface-bright: #37393e;
+    --surface-container-lowest: #0c0e13;
+    --surface-container-low: #191c20;
+    --surface-container: #1d2024;
+    --surface-container-high: #282a2f;
+    --surface-container-highest: #33353a;
+    --on-surface: #e2e2e6;
+    --on-surface-variant: #c3c6d7;
+    --inverse-surface: #e2e2e6;
+    --inverse-on-surface: #2e3036;
+
+    --outline: #8d90a0;
+    --outline-variant: #434655;
+
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --error-container: #93000a;
+
+    --background: #111318;
+    --on-background: #e2e2e6;
+
+    --shadow-1: none;
+    --shadow-2: none;
+    --shadow-3: none;
 }
 
+
+/* ─── Body ─── */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--background);
+    color: var(--on-background);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ─── Headings use Geist ─── */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+}
+
+/* ─── Smooth scroll ─── */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ─── Scrollbar styling ─── */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--surface-container-low);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--outline-variant);
+    border-radius: var(--rounded-full);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--outline);
+}
+
+/* ─── Focus ring utility ─── */
+.focus-ring:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: var(--rounded-sm);
+}
+
+/* ─── Theme transition utility ─── */
+.theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
