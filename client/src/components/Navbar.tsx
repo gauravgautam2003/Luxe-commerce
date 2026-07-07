@@ -1,7 +1,7 @@
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FiSun, FiMoon} from "react-icons/fi";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,18 +9,11 @@ import { useCommerce } from "../context/CommerceContext";
 
 
 const Navbar = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [searchVal, setSearchVal] = useState("");
+    
     const navigate = useNavigate();
     const { theme, toggleTheme } = useContext(ThemeContext);
     const { cartCount } = useCommerce();
 
-    const handleSearchSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (searchVal.trim()) {
-            navigate(`/search?q=${encodeURIComponent(searchVal)}`);
-        }
-    };
 
     return (
         <>
