@@ -25,6 +25,8 @@ import colSpeaker from "../assets/bluetothLead.jpg";
 import colLamp from "../assets/hes6.jpg";
 import colSunglasses from "../assets/watch.jpg";
 import colScarf from "../assets/shirts.jpg";
+import Footer from "../components/Footer";
+import AI_button from "../components/buttons/AI_button";
 
 const categories = [
     { name: "Electronics", desc: "Precision Engineered Tech", img: catElectronics },
@@ -68,7 +70,7 @@ const Home_page = () => {
                     <div className="w-[90%] max-w-7xl">
                         <div className="flex justify-between items-end mb-8">
                             <div>
-                                <h2 className="text-xl sm:text-2xl font-bold tracking-tight" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                                <h2 className="text-xl sm:text-2xl font-bold tracking-tight" >
                                     Curation by Category
                                 </h2>
                                 <p className="text-xs mt-1" style={{ color: "var(--on-surface-variant)" }}>
@@ -114,7 +116,7 @@ const Home_page = () => {
                 <section className="w-full py-12 sm:py-16 flex justify-center" style={{ backgroundColor: "var(--surface-container-low)" }}>
                     <div className="w-[90%] max-w-7xl">
                         <div className="mb-8">
-                            <h2 className="text-xl sm:text-2xl font-bold tracking-tight" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                            <h2 className="text-xl sm:text-2xl font-bold tracking-tight" >
                                 Trending Now
                               </h2>
                             <p className="text-xs mt-1" style={{ color: "var(--on-surface-variant)" }}>
@@ -137,7 +139,7 @@ const Home_page = () => {
                                 </div>
                                 <div className="p-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
                                     <div className="max-w-md">
-                                        <h3 className="text-base sm:text-lg font-bold" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                                        <h3 className="text-base sm:text-lg font-bold">
                                             Aero-X Electric Commuter
                                         </h3>
                                         <p className="text-xs mt-1.5 leading-relaxed" style={{ color: "var(--on-surface-variant)" }}>
@@ -176,7 +178,7 @@ const Home_page = () => {
                                             </button>
                                         </div>
                                         <div className="mt-3">
-                                            <h4 className="text-xs font-semibold truncate" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                                            <h4 className="text-xs font-semibold truncate" >
                                                 {prod.name}
                                             </h4>
                                             <p className="text-xs font-bold text-gray-600 dark:text-gray-400 mt-1">
@@ -194,6 +196,7 @@ const Home_page = () => {
                 <section className="w-full py-16 sm:py-20 flex justify-center">
                     <div className="w-[90%] max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Staggered Grid Collage */}
+                        
                         <div className="grid grid-cols-2 gap-3 relative">
                             <div className="space-y-3">
                                 <motion.div className="rounded-xl overflow-hidden h-40 bg-slate-50" whileHover={{ scale: 1.02 }}>
@@ -218,7 +221,7 @@ const Home_page = () => {
                             <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 block mb-2">
                                 THE FRESH EDIT
                             </span>
-                            <h2 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug mb-5" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                            <h2 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug mb-5">
                                 Curated Arrivals for the Modern Professional
                             </h2>
                             <p className="text-xs leading-relaxed mb-6" style={{ color: "var(--on-surface-variant)" }}>
@@ -229,7 +232,7 @@ const Home_page = () => {
                                 <div className="flex items-start gap-3">
                                     <FaCheckCircle className="w-4 h-4 text-blue-600 mt-0.5" />
                                     <div>
-                                        <h4 className="text-xs font-semibold" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                                        <h4 className="text-xs font-semibold" >
                                             Artisanal Sourcing
                                         </h4>
                                         <p className="text-[11px]" style={{ color: "var(--on-surface-variant)" }}>
@@ -240,7 +243,7 @@ const Home_page = () => {
                                 <div className="flex items-start gap-3">
                                     <FaCheckCircle className="w-4 h-4 text-blue-600 mt-0.5" />
                                     <div>
-                                        <h4 className="text-xs font-semibold" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                                        <h4 className="text-xs font-semibold" >
                                             Sustainable Luxury
                                         </h4>
                                         <p className="text-[11px]" style={{ color: "var(--on-surface-variant)" }}>
@@ -257,118 +260,10 @@ const Home_page = () => {
                     </div>
                 </section>
 
-                {/* 4. Join the Inner Circle Banner */}
-                <section className="w-full py-16 flex justify-center" style={{ backgroundColor: "var(--primary-container)" }}>
-                    <div className="w-[90%] max-w-3xl text-center text-white flex flex-col items-center">
-                        <div className="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center mb-4">
-                            <FiMail className="w-5 h-5" />
-                        </div>
-                        <h2 className="text-xl sm:text-2xl font-bold tracking-tight mb-2" style={{ fontFamily: "'Geist', sans-serif" }}>
-                            Join the Inner Circle
-                        </h2>
-                        <p className="text-xs opacity-90 max-w-lg mb-6 leading-relaxed">
-                            Subscribe to receive early access to new collections, exclusive marketplace insights, and private event invitations.
-                        </p>
-                        <form className="w-full max-w-md flex flex-col sm:flex-row gap-2.5 mb-3" onSubmit={(e) => e.preventDefault()}>
-                            <input
-                                type="email"
-                                placeholder="Enter your corporate email"
-                                className="w-full text-xs px-4 py-3 rounded-md outline-none bg-blue-700/30 text-white placeholder-blue-200 border border-blue-400 focus:border-white transition-colors"
-                            />
-                            <button className="text-xs font-semibold px-6 py-3 rounded-md bg-white text-blue-900 cursor-pointer hover:bg-blue-50 transition-colors whitespace-nowrap">
-                                Join Now
-                            </button>
-                        </form>
-                        <p className="text-[10px] opacity-75">
-                            By subscribing, you agree to our Privacy Policy and Terms of Service.
-                        </p>
-                    </div>
-                </section>
+                {/* 4. Footer */}
+                <Footer />
 
-                {/* 5. Footer */}
-                <footer className="w-full py-12 flex justify-center" style={{ borderTop: "1px solid var(--outline-variant)", backgroundColor: "var(--surface-container-lowest)" }}>
-                    <div className="w-[90%] max-w-7xl">
-                        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
-                            {/* Brand Column */}
-                            <div className="md:col-span-2">
-                                <h3 className="text-base font-extrabold tracking-tight mb-4 text-blue-600" style={{ fontFamily: "'Geist', sans-serif" }}>
-                                    LUXE
-                                </h3>
-                                <p className="text-xs leading-relaxed max-w-xs mb-4" style={{ color: "var(--on-surface-variant)" }}>
-                                    Providing a curated marketplace experience for the modern professional. Quality and design at the heart of everything we do.
-                                </p>
-                                <div className="flex gap-3">
-                                    <FiGlobe className="w-4 h-4 text-gray-500 hover:text-blue-600 cursor-pointer transition-colors" />
-                                    <FiTwitter className="w-4 h-4 text-gray-500 hover:text-blue-600 cursor-pointer transition-colors" />
-                                    <FiShare2 className="w-4 h-4 text-gray-500 hover:text-blue-600 cursor-pointer transition-colors" />
-                                </div>
-                            </div>
-
-                            {/* Menu Columns */}
-                            <div>
-                                <h4 className="text-xs font-bold uppercase tracking-wider mb-4" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
-                                    Explore
-                                </h4>
-                                <ul className="space-y-2 text-xs" style={{ color: "var(--on-surface-variant)" }}>
-                                    <li><a href="#" className="hover:underline">Shop All</a></li>
-                                    <li><a href="#" className="hover:underline">New Arrivals</a></li>
-                                    <li><a href="#" className="hover:underline">Trending Now</a></li>
-                                    <li><a href="#" className="hover:underline">Collections</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="text-xs font-bold uppercase tracking-wider mb-4" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
-                                    Support
-                                </h4>
-                                <ul className="space-y-2 text-xs" style={{ color: "var(--on-surface-variant)" }}>
-                                    <li><a href="#" onClick={() => navigate("/track")} className="hover:underline">Shipping & Returns</a></li>
-                                    <li><a href="#" className="hover:underline">Contact Us</a></li>
-                                    <li><a href="#" onClick={() => navigate("/track")} className="hover:underline">Order Tracking</a></li>
-                                    <li><a href="#" onClick={() => navigate("/orders")} className="hover:underline">FAQ</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="text-xs font-bold uppercase tracking-wider mb-4" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
-                                    Company
-                                </h4>
-                                <ul className="space-y-2 text-xs" style={{ color: "var(--on-surface-variant)" }}>
-                                    <li><a href="#" onClick={() => navigate("/admin")} className="hover:underline">Admin Dashboard</a></li>
-                                    <li><a href="#" className="hover:underline">Sustainability</a></li>
-                                    <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-                                    <li><a href="#" className="hover:underline">Terms of Service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="pt-6 border-t flex flex-col sm:flex-row justify-between items-center gap-4" style={{ borderColor: "var(--outline-variant)" }}>
-                            <p className="text-[11px]" style={{ color: "var(--on-surface-variant)" }}>
-                                &copy; {new Date().getFullYear()} LUXE Premium Marketplace. All rights reserved.
-                            </p>
-                            <div className="flex gap-2.5 opacity-60">
-                                <span className="text-[10px] font-bold border px-1.5 py-0.5 rounded" style={{ borderColor: "var(--outline-variant)" }}>VISA</span>
-                                <span className="text-[10px] font-bold border px-1.5 py-0.5 rounded" style={{ borderColor: "var(--outline-variant)" }}>MC</span>
-                                <span className="text-[10px] font-bold border px-1.5 py-0.5 rounded" style={{ borderColor: "var(--outline-variant)" }}>AMEX</span>
-                                <span className="text-[10px] font-bold border px-1.5 py-0.5 rounded" style={{ borderColor: "var(--outline-variant)" }}>PP</span>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                {/* Floating AI Button */}
-                <motion.div
-                    className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 flex items-center rounded-full px-2.5 py-2.5 sm:px-3 sm:py-3 text-sm font-medium shadow-xl cursor-pointer z-40"
-                    style={{
-                        backgroundColor: "var(--primary-container)",
-                        color: "var(--on-primary)",
-                        boxShadow: "0 8px 24px rgba(37, 99, 235, 0.35)",
-                    }}
-                    onClick={() => navigate("/search")}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                >
-                    <PiMetaLogoBold className="text-white cursor-pointer font-bold text-lg sm:text-xl" />
-                </motion.div>
+                <AI_button />
             </div>
         </AnimatePresence>
     );
