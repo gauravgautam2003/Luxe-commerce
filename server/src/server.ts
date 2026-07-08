@@ -1,24 +1,27 @@
 import app from "./app.js";
 import ENV from "./config/env.js";
+import connectDB from "./config/db.js";
 
-const PORT = ENV.PORT || 4000;
+const PORT = Number(ENV.PORT) || 4000;
 
 /**
- * create server using app.ts file
- * server currently listen local host PORT:3000
- * add funtionality for production using NODE_ENV
+ * create server function
+ * write code in the try catch
+ * call database
  */
 
-function serverRunning() {
+const startServer = async (): Promise<void> => {
     try {
-        if(ENV.NODE_ENV === "development") {
-            app.listen(PORT,() => {
-                console.log(`http://localhost:${PORT}`);
-            });
-        }
-    } catch (error) {
-        console.log("server is not working: ", error);
-    }
-}
+        await connectDB();
 
-serverRunning();
+        app.listen(PORT, () => {
+            console.log(`🚀 Server running in ${ENV.NODE_ENV} mode on http://localhost:${PORT}`);
+        });
+
+    } catch (error) {
+        console.error("❌ Failed to start server:", error);
+        process.exit(1);
+    }
+};
+
+startServer();
