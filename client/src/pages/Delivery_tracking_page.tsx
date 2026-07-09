@@ -3,9 +3,9 @@ import { FiClock, FiPhone, FiMessageSquare, FiAlertCircle, FiArrowLeft } from "r
 import { FaCheckCircle, FaTruck } from "react-icons/fa";
 
 // Images
-import driverImg from "../assets/main.jpg"; // Driver avatar substitute
-import shoeImg from "../assets/nike.jpg";
-import watchImg from "../assets/watch.jpg";
+import driverImg from "../assets/main.png"; // Driver avatar substitute
+import shoeImg from "../assets/nike.png";
+import watchImg from "../assets/watch.png";
 
 const Delivery_tracking_page = () => {
     const navigate = useNavigate();
@@ -13,17 +13,17 @@ const Delivery_tracking_page = () => {
     return (
         <div className="w-full min-h-screen py-8 flex justify-center theme-transition" style={{ backgroundColor: "var(--background)" }}>
             <div className="w-[90%] max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-                
+
                 {/* Left: Map Container */}
                 <div className="rounded-2xl overflow-hidden relative border min-h-[350px] lg:min-h-[500px]" style={{ borderColor: "var(--outline-variant)", backgroundColor: "#1e293b" }}>
-                    
+
                     {/* Simulated Map lines / Grid */}
                     <div className="absolute inset-0 opacity-15 pointer-events-none">
                         <div className="w-full h-full" style={{
                             backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px), linear-gradient(0deg, transparent 24%, #ffffff 25%, #ffffff 26%, transparent 27%, transparent 74%, #ffffff 75%, #ffffff 76%, transparent 77%), linear-gradient(90deg, transparent 24%, #ffffff 25%, #ffffff 26%, transparent 27%, transparent 74%, #ffffff 75%, #ffffff 76%, transparent 77%)",
                             backgroundSize: "40px 40px, 120px 120px, 120px 120px"
                         }}></div>
-                        
+
                         {/* Staggered street blocks */}
                         <div className="absolute top-20 left-12 w-24 h-16 border-2 border-white"></div>
                         <div className="absolute top-44 left-32 w-32 h-20 border-2 border-white"></div>
@@ -64,7 +64,7 @@ const Delivery_tracking_page = () => {
                 {/* Right: Details Panel */}
                 <div className="p-6 rounded-2xl border flex flex-col justify-between" style={{ borderColor: "var(--outline-variant)", backgroundColor: "var(--surface-container-lowest)" }}>
                     <div className="space-y-6">
-                        
+
                         {/* Header Status */}
                         <div className="flex justify-between items-start">
                             <div>

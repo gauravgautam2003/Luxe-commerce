@@ -37,7 +37,7 @@ export const products: Product[] = [
         price: 550.0,
         rating: 4.7,
         inStock: true,
-        image: new URL("../assets/fashion.jpg", import.meta.url).href,
+        image: new URL("../assets/fashion.png", import.meta.url).href,
         description: "Premium leather backpack for work essentials and travel days.",
     },
     {
@@ -47,7 +47,7 @@ export const products: Product[] = [
         price: 49.99,
         rating: 4.3,
         inStock: true,
-        image: new URL("../assets/bluetothLead.jpg", import.meta.url).href,
+        image: new URL("../assets/bluetothLead.png", import.meta.url).href,
         description: "A sleek wireless headset with excellent battery life and crisp audio.",
     },
     {
@@ -57,7 +57,7 @@ export const products: Product[] = [
         price: 39.99,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/dresh.jpg", import.meta.url).href,
+        image: new URL("../assets/dresh.png", import.meta.url).href,
         description: "Lightweight dress with a comfortable fit for warm-weather styling.",
     },
     {
@@ -67,7 +67,7 @@ export const products: Product[] = [
         price: 44.95,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/dresh2.jpg", import.meta.url).href,
+        image: new URL("../assets/dresh2.png", import.meta.url).href,
         description: "A floral print dress with elegant detailing for day or night.",
     },
     {
@@ -77,7 +77,7 @@ export const products: Product[] = [
         price: 54.99,
         rating: 4.7,
         inStock: true,
-        image: new URL("../assets/dresh3.jpg", import.meta.url).href,
+        image: new URL("../assets/dresh3.png", import.meta.url).href,
         description: "Romantic lace dress with a flattering silhouette and premium finish.",
     },
     {
@@ -87,7 +87,7 @@ export const products: Product[] = [
         price: 52.0,
         rating: 4.4,
         inStock: true,
-        image: new URL("../assets/dresh4.jpg", import.meta.url).href,
+        image: new URL("../assets/dresh4.png", import.meta.url).href,
         description: "Versatile dress designed for elegant everyday wear.",
     },
     {
@@ -97,7 +97,7 @@ export const products: Product[] = [
         price: 69.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/fashion.jpg", import.meta.url).href,
+        image: new URL("../assets/fashion.png", import.meta.url).href,
         description: "Modern jacket with a sharp fit and premium styling details.",
     },
     {
@@ -107,7 +107,7 @@ export const products: Product[] = [
         price: 58.5,
         rating: 4.1,
         inStock: true,
-        image: new URL("../assets/fashion2.jpg", import.meta.url).href,
+        image: new URL("../assets/fashion2.png", import.meta.url).href,
         description: "A fashionable set built for streetwear appeal and comfort.",
     },
     {
@@ -117,7 +117,7 @@ export const products: Product[] = [
         price: 64.99,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/fashion3.jpg", import.meta.url).href,
+        image: new URL("../assets/fashion3.png", import.meta.url).href,
         description: "Styled streetwear with bold colors and relaxed comfort.",
     },
     {
@@ -127,7 +127,7 @@ export const products: Product[] = [
         price: 24.99,
         rating: 4.0,
         inStock: true,
-        image: new URL("../assets/fashion4.jpg", import.meta.url).href,
+        image: new URL("../assets/fashion4.png", import.meta.url).href,
         description: "Soft cotton tee that pairs well with casual and layered looks.",
     },
     {
@@ -137,7 +137,7 @@ export const products: Product[] = [
         price: 72.0,
         rating: 4.3,
         inStock: true,
-        image: new URL("../assets/fation5.jpg", import.meta.url).href,
+        image: new URL("../assets/fation5.png", import.meta.url).href,
         description: "A fashionable capsule collection piece for modern wardrobes.",
     },
     {
@@ -147,7 +147,7 @@ export const products: Product[] = [
         price: 89.99,
         rating: 4.8,
         inStock: true,
-        image: new URL("../assets/headphone.jpg", import.meta.url).href,
+        image: new URL("../assets/headphone.png", import.meta.url).href,
         description: "Premium headphones engineered for studio-quality sound.",
     },
     {
@@ -157,7 +157,7 @@ export const products: Product[] = [
         price: 79.99,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/headphone2.jpg", import.meta.url).href,
+        image: new URL("../assets/headphone2.png", import.meta.url).href,
         description: "Comfortable wireless headphones with noise isolation.",
     },
     {
@@ -167,7 +167,7 @@ export const products: Product[] = [
         price: 99.99,
         rating: 4.4,
         inStock: true,
-        image: new URL("../assets/hes6.jpg", import.meta.url).href,
+        image: new URL("../assets/hes6.png", import.meta.url).href,
         description: "Next-gen headset with voice control and crisp sound quality.",
     },
     {
@@ -177,7 +177,7 @@ export const products: Product[] = [
         price: 499.99,
         rating: 4.7,
         inStock: true,
-        image: new URL("../assets/imoeixphone.jpg", import.meta.url).href,
+        image: new URL("../assets/imoeixphone.png", import.meta.url).href,
         description: "A powerful smartphone with an edge-to-edge display and sleek design.",
     },
     {
@@ -187,7 +187,7 @@ export const products: Product[] = [
         price: 59.99,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/keayboard3.jpg", import.meta.url).href,
+        image: new URL("../assets/keayboard3.png", import.meta.url).href,
         description: "Mechanical keyboard with customizable RGB lighting.",
     },
     {
@@ -197,7 +197,7 @@ export const products: Product[] = [
         price: 69.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/keyboad2.jpg", import.meta.url).href,
+        image: new URL("../assets/keyboad2.png", import.meta.url).href,
         description: "Responsive mechanical keyboard ideal for gaming and typing.",
     },
     {
@@ -207,7 +207,7 @@ export const products: Product[] = [
         price: 49.99,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/keyboard.jpg", import.meta.url).href,
+        image: new URL("../assets/keyboard.png", import.meta.url).href,
         description: "Space-saving compact keyboard with a minimal footprint.",
     },
     {
@@ -217,7 +217,7 @@ export const products: Product[] = [
         price: 1099.99,
         rating: 4.8,
         inStock: true,
-        image: new URL("../assets/laptop.jpg", import.meta.url).href,
+        image: new URL("../assets/laptop.png", import.meta.url).href,
         description: "Powerful laptop for professionals with premium performance.",
     },
     {
@@ -227,7 +227,7 @@ export const products: Product[] = [
         price: 999.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/laptop2.0.jpg", import.meta.url).href,
+        image: new URL("../assets/laptop2.0.png", import.meta.url).href,
         description: "Thin and lightweight ultrabook built for productivity on the go.",
     },
     {
@@ -237,7 +237,7 @@ export const products: Product[] = [
         price: 1299.99,
         rating: 4.7,
         inStock: true,
-        image: new URL("../assets/laptop2.jpg", import.meta.url).href,
+        image: new URL("../assets/laptop2.png", import.meta.url).href,
         description: "High-performance gaming laptop with dedicated graphics.",
     },
     {
@@ -247,7 +247,7 @@ export const products: Product[] = [
         price: 949.99,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/laptop3.jpg", import.meta.url).href,
+        image: new URL("../assets/laptop3.png", import.meta.url).href,
         description: "Reliable laptop engineered for modern business users.",
     },
     {
@@ -257,7 +257,7 @@ export const products: Product[] = [
         price: 1249.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/laptop4.jpg", import.meta.url).href,
+        image: new URL("../assets/laptop4.png", import.meta.url).href,
         description: "Premium laptop with a sleek design and creative power.",
     },
     {
@@ -267,7 +267,7 @@ export const products: Product[] = [
         price: 1149.99,
         rating: 4.4,
         inStock: true,
-        image: new URL("../assets/makebook.jpg", import.meta.url).href,
+        image: new URL("../assets/makebook.png", import.meta.url).href,
         description: "A creative-focused laptop for editing, design, and content creation.",
     },
     {
@@ -277,7 +277,7 @@ export const products: Product[] = [
         price: 29.99,
         rating: 4.3,
         inStock: true,
-        image: new URL("../assets/mouse.jpg", import.meta.url).href,
+        image: new URL("../assets/mouse.png", import.meta.url).href,
         description: "Ergonomic wireless mouse with smooth tracking and long battery life.",
     },
     {
@@ -287,7 +287,7 @@ export const products: Product[] = [
         price: 79.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/nike.jpg", import.meta.url).href,
+        image: new URL("../assets/nike.png", import.meta.url).href,
         description: "Dynamic running shoes engineered for comfort and speed.",
     },
     {
@@ -297,7 +297,7 @@ export const products: Product[] = [
         price: 89.99,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/nike2.jpg", import.meta.url).href,
+        image: new URL("../assets/nike1.png", import.meta.url).href,
         description: "Modern sneakers offering everyday comfort and style.",
     },
     {
@@ -307,7 +307,7 @@ export const products: Product[] = [
         price: 84.99,
         rating: 4.4,
         inStock: true,
-        image: new URL("../assets/nike3.jpg", import.meta.url).href,
+        image: new URL("../assets/nike2.png", import.meta.url).href,
         description: "Street-ready Nike shoes for a bold casual look.",
     },
     {
@@ -317,7 +317,7 @@ export const products: Product[] = [
         price: 74.99,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/pumashoes.jpg", import.meta.url).href,
+        image: new URL("../assets/pumashoes.png", import.meta.url).href,
         description: "Lightweight Puma sneakers designed for daily runs.",
     },
     {
@@ -327,7 +327,7 @@ export const products: Product[] = [
         price: 29.99,
         rating: 4.0,
         inStock: true,
-        image: new URL("../assets/shirts.jpg", import.meta.url).href,
+        image: new URL("../assets/shirts.png", import.meta.url).href,
         description: "A crisp shirt with a clean silhouette that pairs with any outfit.",
     },
     {
@@ -337,7 +337,7 @@ export const products: Product[] = [
         price: 69.99,
         rating: 4.3,
         inStock: true,
-        image: new URL("../assets/shoes.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes.png", import.meta.url).href,
         description: "Classic leather shoes with a polished finish and durable sole.",
     },
     {
@@ -347,7 +347,7 @@ export const products: Product[] = [
         price: 59.99,
         rating: 4.1,
         inStock: true,
-        image: new URL("../assets/shoes2.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes2.png", import.meta.url).href,
         description: "Casual shoes designed for everyday comfort and easy wear.",
     },
     {
@@ -357,7 +357,7 @@ export const products: Product[] = [
         price: 64.99,
         rating: 4.4,
         inStock: true,
-        image: new URL("../assets/shoes3.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes3.png", import.meta.url).href,
         description: "Sport shoes built for agility, traction, and active use.",
     },
     {
@@ -367,7 +367,7 @@ export const products: Product[] = [
         price: 79.99,
         rating: 4.5,
         inStock: true,
-        image: new URL("../assets/shoes4.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes4.png", import.meta.url).href,
         description: "Bold fashion boots with strong support and standout style.",
     },
     {
@@ -377,7 +377,7 @@ export const products: Product[] = [
         price: 69.99,
         rating: 4.3,
         inStock: true,
-        image: new URL("../assets/shoes5.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes5.png", import.meta.url).href,
         description: "Trainer shoes made for studio workouts and street-ready looks.",
     },
     {
@@ -387,7 +387,7 @@ export const products: Product[] = [
         price: 72.5,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/shoes6.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes6.png", import.meta.url).href,
         description: "Everyday sneakers with cushioned comfort and a modern profile.",
     },
     {
@@ -397,7 +397,7 @@ export const products: Product[] = [
         price: 66.0,
         rating: 4.1,
         inStock: true,
-        image: new URL("../assets/shoes7.jpg", import.meta.url).href,
+        image: new URL("../assets/shoes7.png", import.meta.url).href,
         description: "Athletic shoes made to move with you throughout the day.",
     },
     {
@@ -407,7 +407,7 @@ export const products: Product[] = [
         price: 22.99,
         rating: 4.0,
         inStock: true,
-        image: new URL("../assets/tshirt.jpg", import.meta.url).href,
+        image: new URL("../assets/tshirt.png", import.meta.url).href,
         description: "A printed tee with soft fabric and a relaxed fit.",
     },
     {
@@ -417,7 +417,7 @@ export const products: Product[] = [
         price: 21.99,
         rating: 4.1,
         inStock: true,
-        image: new URL("../assets/tshirt2.jpg", import.meta.url).href,
+        image: new URL("../assets/tshirt2.png", import.meta.url).href,
         description: "Retro-inspired tee with a timeless vibe.",
     },
     {
@@ -427,7 +427,7 @@ export const products: Product[] = [
         price: 19.99,
         rating: 4.2,
         inStock: true,
-        image: new URL("../assets/tshirt3.jpg", import.meta.url).href,
+        image: new URL("../assets/tshirt3.png", import.meta.url).href,
         description: "Soft cotton tee designed for everyday comfort.",
     },
     {
@@ -437,7 +437,7 @@ export const products: Product[] = [
         price: 199.99,
         rating: 4.6,
         inStock: true,
-        image: new URL("../assets/watch.jpg", import.meta.url).href,
+        image: new URL("../assets/watch.png", import.meta.url).href,
         description: "A sleek smartwatch with fitness tracking and smart notifications.",
     },
 ];

@@ -5,10 +5,10 @@ import { products } from "../data/products";
 import { useCommerce } from "../context/CommerceContext";
 
 // Load laptop images
-import prodLaptop from "../assets/laptop.jpg";
-import prodLaptop2 from "../assets/laptop2.jpg";
-import prodLaptop3 from "../assets/laptop3.jpg";
-import prodLaptop4 from "../assets/laptop4.jpg";
+import prodLaptop from "../assets/laptop.png";
+import prodLaptop2 from "../assets/laptop2.png";
+import prodLaptop3 from "../assets/laptop3.png";
+import prodLaptop4 from "../assets/laptop4.png";
 
 const specs = [
     { label: "Processor", value: "LUXE X2 Neural (16-Core)" },

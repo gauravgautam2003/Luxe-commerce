@@ -1,8 +1,8 @@
-import { PiMetaLogoBold } from "react-icons/pi";
+
 import { AnimatePresence, motion } from "framer-motion";
 import MainFrame from "../components/MainFrame";
 import { useNavigate } from "react-router-dom";
-import { FiArrowRight, FiArrowLeft, FiHeart, FiGlobe, FiTwitter, FiShare2, FiMail } from "react-icons/fi";
+import { FiArrowRight, FiArrowLeft, FiHeart } from "react-icons/fi";
 import { FaCheckCircle } from "react-icons/fa";
 
 // Category images (mix of generated and existing)
@@ -14,17 +14,17 @@ import catBeauty from "../assets/category_beauty.png";
 // Product images
 import prodBike from "../assets/product_bike.png";
 import prodCeramic from "../assets/product_ceramic.png";
-import prodHeadphones from "../assets/headphone.jpg";
-import prodWatch from "../assets/watch.jpg";
-import prodBackpack from "../assets/fashion.jpg"; // Leather bag substitute
+import prodHeadphones from "../assets/headphone.png";
+import prodWatch from "../assets/watch.png";
+import prodBackpack from "../assets/fashion.png"; // Leather bag substitute
 import { products } from "../data/products";
 import { useCommerce } from "../context/CommerceContext";
 
 // Collage images
-import colSpeaker from "../assets/bluetothLead.jpg";
-import colLamp from "../assets/hes6.jpg";
-import colSunglasses from "../assets/watch.jpg";
-import colScarf from "../assets/shirts.jpg";
+import colSpeaker from "../assets/bluetothLead.png";
+import colLamp from "../assets/hes6.png";
+import colSunglasses from "../assets/watch.png";
+import colScarf from "../assets/shirts.png";
 import Footer from "../components/Footer";
 import AI_button from "../components/buttons/AI_button";
 
@@ -118,7 +118,7 @@ const Home_page = () => {
                         <div className="mb-8">
                             <h2 className="text-xl sm:text-2xl font-bold tracking-tight" >
                                 Trending Now
-                              </h2>
+                            </h2>
                             <p className="text-xs mt-1" style={{ color: "var(--on-surface-variant)" }}>
                                 The pieces everyone is talking about this week.
                             </p>
@@ -196,7 +196,7 @@ const Home_page = () => {
                 <section className="w-full py-16 sm:py-20 flex justify-center">
                     <div className="w-[90%] max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Staggered Grid Collage */}
-                        
+
                         <div className="grid grid-cols-2 gap-3 relative">
                             <div className="space-y-3">
                                 <motion.div className="rounded-xl overflow-hidden h-40 bg-slate-50" whileHover={{ scale: 1.02 }}>

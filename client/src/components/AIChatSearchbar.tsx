@@ -211,7 +211,7 @@ const AIChatSearchbar = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: 8 }}
                                 transition={{ duration: 0.22, ease: "easeOut" }}
-                            >
+                                    >
                                 <div className={`max-w-[88%] sm:max-w-[76%] ${message.role === "user" ? "text-right" : "text-left"}`}>
                                     <div
                                         className="rounded-xl px-3.5 py-2.5 text-xs leading-relaxed sm:text-xs"

@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { FiHome, FiShoppingBag, FiLayers, FiUsers, FiBarChart2, FiSettings, FiSearch, FiBell, FiHelpCircle, FiPlus, FiMoreVertical, FiArrowLeft } from "react-icons/fi";
 
 // User avatars for table
-import superAdminImg from "../assets/main.jpg"; // Admin avatar substitute
-import user1 from "../assets/dresh.jpg";
-import user2 from "../assets/fashion2.jpg";
-import user3 from "../assets/nike2.jpg";
+import superAdminImg from "../assets/main.png"; // Admin avatar substitute
+import user1 from "../assets/dresh.png";
+import user2 from "../assets/fashion2.png";
+import user3 from "../assets/nike2.png";
 
 const sidebarMenu = [
     { label: "Dashboard", icon: FiHome, active: true },
@@ -21,7 +21,7 @@ const Admin_panel_page = () => {
 
     return (
         <div className="w-full min-h-screen flex flex-col md:flex-row theme-transition" style={{ backgroundColor: "var(--background)" }}>
-            
+
             {/* Sidebar Navigation */}
             <aside className="w-full md:w-64 flex-none border-b md:border-b-0 md:border-r p-6 flex flex-col justify-between" style={{ borderColor: "var(--outline-variant)", backgroundColor: "var(--surface-container-lowest)" }}>
                 <div>
@@ -94,7 +94,7 @@ const Admin_panel_page = () => {
                     <h1 className="text-lg font-bold" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
                         Overview
                     </h1>
-                    
+
                     <div className="flex items-center gap-3 w-full sm:w-auto">
                         {/* Search data */}
                         <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border text-xs w-full sm:w-64" style={{ borderColor: "var(--outline-variant)", backgroundColor: "var(--surface-container-lowest)" }}>
@@ -205,7 +205,7 @@ const Admin_panel_page = () => {
                         <h3 className="text-xs font-bold uppercase tracking-wider mb-4 text-center" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
                             Top Categories
                         </h3>
-                        
+
                         {/* SVG Donut Circle */}
                         <div className="relative w-36 h-36 mx-auto flex items-center justify-center">
                             <svg className="w-full h-full transform -rotate-90">

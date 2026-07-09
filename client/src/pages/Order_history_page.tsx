@@ -4,10 +4,10 @@ import { FaCheckCircle } from "react-icons/fa";
 import { useCommerce } from "../context/CommerceContext";
 
 // Images
-import userAvatar from "../assets/main.jpg"; // User avatar substitute
-import watchImg from "../assets/watch.jpg";
-import runnerImg from "../assets/nike.jpg";
-import headImg from "../assets/headphone.jpg";
+import userAvatar from "../assets/main.png"; // User avatar substitute
+import watchImg from "../assets/watch.png";
+import runnerImg from "../assets/nike.png";
+import headImg from "../assets/headphone.png";
 
 const sideMenuItems = [
     { label: "My Orders", icon: FiShoppingBag, active: true },
@@ -25,7 +25,7 @@ const Order_history_page = () => {
     return (
         <div className="w-full min-h-screen py-8 flex justify-center theme-transition" style={{ backgroundColor: "var(--background)" }}>
             <div className="w-[90%] max-w-7xl grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
-                
+
                 {/* Left Sidebar: Profile Details */}
                 <div className="lg:col-span-1 p-6 rounded-2xl border flex flex-col items-center" style={{ borderColor: "var(--outline-variant)", backgroundColor: "var(--surface-container-lowest)" }}>
                     <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-blue-500 relative">
