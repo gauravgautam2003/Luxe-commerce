@@ -1,9 +1,24 @@
+
+import addProductHook from "../hooks/addProduct.hooks";
+
 const AddProducts = () => {
+
+    const { productImage, setProductImage,
+        productName, setProductName,
+        productDescription, setProductDescription,
+        productCategory, setProductCategory,
+        productPrice, setProductPrice,
+        productOfferPrice, setProductOfferPrice,
+        handleProductsForm } = addProductHook();
+
+        const imageHandler = () => {
+            
+        }
     return (
 
         <>
             <div className="flex flex-col justify-between items-center">
-                <form className="mt-4 space-y-5 max-w-6xl border border-gray-400 rounded-md shadow-2xl p-2">
+                <form onSubmit={handleProductsForm} className="mt-4 space-y-5 max-w-6xl border border-gray-400 rounded-md shadow-2xl p-2">
                     <h1
                         className="text-center text-xl"
                         style={{ color: "var(--on-surface-variant)" }}
@@ -28,6 +43,7 @@ const AddProducts = () => {
                                             accept="image/*"
                                             type="file"
                                             id={`image${index}`}
+
                                             hidden
                                         />
                                         <img
@@ -55,7 +71,9 @@ const AddProducts = () => {
                                     type="text"
                                     placeholder="Type here"
                                     className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40"
-                                    required
+                                    value={productName}
+                                    onChange={(e) => setProductName(e.target.value)}
+
                                 />
                             </div>
                             <div className="flex flex-col gap-1 max-w-md">
@@ -70,6 +88,8 @@ const AddProducts = () => {
                                     id="product-description"
                                     rows={4}
                                     className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40 resize-none"
+                                    value={productDescription}
+                                    onChange={(e) => setProductDescription(e.target.value)}
                                     placeholder="Type here"
                                 >
                                 </textarea>
@@ -92,12 +112,12 @@ const AddProducts = () => {
                                     >
                                         Select Category
                                     </option>
-                                    {[{ name: 'Electronics' }, { name: 'Clothing' }, { name: 'Accessories' }].map((item, index) => (
+                                    {productCategory.map((item, index) => (
                                         <option
                                             key={index}
-                                            value={item.name}
+                                            value={item}
                                         >
-                                            {item.name}
+                                            {item}
                                         </option>
                                     ))}
                                 </select>
@@ -116,7 +136,7 @@ const AddProducts = () => {
                                         type="number"
                                         placeholder="0"
                                         className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40"
-                                        required
+
                                     />
                                 </div>
 
@@ -133,7 +153,7 @@ const AddProducts = () => {
                                         type="number"
                                         placeholder="0"
                                         className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40"
-                                        required
+
                                     />
                                 </div>
                             </div>

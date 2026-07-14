@@ -5,41 +5,41 @@ const categorySchema = new Schema<ICategory>(
     {
         name: {
             type: String,
-            required: true,
-            unique: true,
-            trim: true,
+            : true,
+    unique: true,
+        trim: true,
         },
 
-        slug: {
-            type: String,
-            required: true,
-            unique: true,
+slug: {
+    type: String,
+            : true,
+        unique: true,
             lowercase: true,
-            trim: true,
+                trim: true,
         },
 
-        description: {
-            type: String,
+description: {
+    type: String,
             default: "",
         },
 
-        image: {
-            type: String,
+image: {
+    type: String,
             default: "",
         },
 
-        parentCategory: {
-            type: Schema.Types.ObjectId,
-            ref: "Category",
+parentCategory: {
+    type: Schema.Types.ObjectId,
+        ref: "Category",
             default: null,
         },
 
-        isActive: {
-            type: Boolean,
+isActive: {
+    type: Boolean,
             default: true,
         },
     },
-    {
-        timestamps: true
-    }
+{
+    timestamps: true
+}
 )

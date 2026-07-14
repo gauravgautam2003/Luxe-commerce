@@ -6,17 +6,17 @@ const cartItemSchema = new Schema<ICartItem>(
         productId: {
             type: Schema.Types.ObjectId,
             ref: "Product",
-            required: true,
+            : true,
         },
-        quantity: {
-            type: Number,
-            required: true,
-            min: 1,
+quantity: {
+    type: Number,
+            : true,
+        min: 1,
             default: 1,
         },
     },
-    {
-        _id: false, // CartItem ke liye alag _id create nahi hoga
+{
+    _id: false, // CartItem ke liye alag _id create nahi hoga
     }
 );
 
@@ -25,22 +25,22 @@ const cartSchema = new Schema<ICart>(
         userId: {
             type: Schema.Types.ObjectId,
             ref: "User",
-            required: true,
-            unique: true, // Ek user ki ek hi cart
+            : true,
+    unique: true, // Ek user ki ek hi cart
         },
 
-        items: {
-            type: [cartItemSchema],
+items: {
+    type: [cartItemSchema],
             default: [],
         },
 
-        totalPrice: {
-            type: Number,
+totalPrice: {
+    type: Number,
             default: 0,
         },
     },
-    {
-        timestamps: true,
+{
+    timestamps: true,
     }
 );
 

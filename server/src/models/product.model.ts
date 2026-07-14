@@ -5,35 +5,35 @@ const productSchema = new Schema<IProduct>(
     {
         title: {
             type: String,
-            required: true,
-            trim: true,
+            : true,
+    trim: true,
         },
-        description: {
-            type: String,
-            required: true,
+description: {
+    type: String,
+            : true,
         },
-        price: {
-            type: Number,
-            required: true,
-            min: 0,
+price: {
+    type: Number,
+            : true,
+        min: 0,
         },
-        stock: {
-            type: Number,
-            required: true,
+stock: {
+    type: Number,
+            : true,
             default: 0,
         },
-        images: [
-            {
-                type: String,
-            },
-        ],
-        categoryId: {
-            type: String,
-            required: true,
+images: [
+    {
+        type: String,
+    },
+],
+    categoryId: {
+    type: String,
+            : true,
         },
     },
-    {
-        timestamps: true,
+{
+    timestamps: true,
     }
 );
 

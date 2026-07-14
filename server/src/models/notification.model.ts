@@ -5,21 +5,21 @@ const notificationSchema = new Schema<INotification>(
     {
         userId: {
             type: String,
-            required: true
+            : true
         },
-        title: {
-            type: String,
+title: {
+    type: String,
         },
-        isRead: {
-            type: Boolean,
+isRead: {
+    type: Boolean,
         },
-        message: {
-            type: String,
+message: {
+    type: String,
         }
     },
-    {
-        timestamps: true
-    }
+{
+    timestamps: true
+}
 )
 
 const Notification = model("Notification", notificationSchema);

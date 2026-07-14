@@ -18,16 +18,16 @@ const signupPage = () => {
     const handleFormSumbit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        if(password.length < 8) {
+        if (password.length < 8) {
             setError("Password must be atleast 8 characters");
             return;
         }
 
-        if(password != confirmPassword) {
+        if (password != confirmPassword) {
             setError("Password and confirmPassword must same");
             return;
         }
-        if(!/[()@#$%^&*,.'']/.test(password) && !/[A-Z]/.test(password)) {
+        if (!/[()@#$%^&*,.'']/.test(password) && !/[A-Z]/.test(password)) {
             setError("Password must with special and capital characters");
             return;
         }
@@ -146,7 +146,7 @@ const signupPage = () => {
                                     type="text"
                                     id="username"
                                     value={username}
-                                    required
+
                                     onChange={(e) => setUsername(e.target.value)}
                                     className="rounded-md border px-3 py-2 text-xs sm:text-sm outline-none transition-colors theme-transition"
                                     style={{
@@ -172,7 +172,7 @@ const signupPage = () => {
                                 type="email"
                                 id="email"
                                 value={email}
-                                required
+
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="rounded-md border px-3 py-2 text-xs sm:text-sm outline-none transition-colors theme-transition"
                                 style={{
@@ -195,7 +195,7 @@ const signupPage = () => {
                                 type="password"
                                 id="password"
                                 value={password}
-                                required
+
                                 onChange={(e) => setPassword(e.target.value)}
                                 className="rounded-md border px-3 py-2 text-xs sm:text-sm outline-none transition-colors theme-transition"
                                 style={{
@@ -219,7 +219,7 @@ const signupPage = () => {
                                     type="password"
                                     id="confirmPassword"
                                     value={confirmPassword}
-                                    required
+
                                     onChange={(e) => setConfirmPassword(e.target.value)}
                                     className="rounded-md border px-3 py-2 text-xs sm:text-sm outline-none transition-colors theme-transition"
                                     style={{

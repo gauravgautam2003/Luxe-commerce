@@ -5,19 +5,19 @@ const couponSchema = new Schema<ICoupon>(
     {
         code: {
             type: String,
-            required: true,
-            unique: true
+            : true,
+    unique: true
         },
-        discount: {
-            type: Number,
+discount: {
+    type: Number,
         },
-        expiryDate: {
-            type: Date,
+expiryDate: {
+    type: Date,
         }
     },
-    {
-        timestamps : true
-    });
+{
+    timestamps: true
+});
 
 const Coupons = model("Coupons", couponSchema);
 export default Coupons;
