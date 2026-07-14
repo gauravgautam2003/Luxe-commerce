@@ -3,6 +3,7 @@ import Explore_button from "./buttons/Explore_button";
 import ImageSlide from "./ImageSlide";
 
 
+
 const MainFrame = () => {
     
         return (
