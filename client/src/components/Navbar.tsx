@@ -1,11 +1,13 @@
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
-import { FiSun, FiMoon} from "react-icons/fi";
+import { FiSun} from "react-icons/fi";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCommerce } from "../context/CommerceContext";
+import { MdOutlineSettings } from "react-icons/md";
+
 
 
 const Navbar = () => {
@@ -42,7 +44,7 @@ const Navbar = () => {
                         {/* Theme Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 font-semibold cursor-pointer hover:scale-110"
+                            className="flex items-center justify-center rounded-full transition-all duration-300 font-semibold cursor-pointer hover:scale-110"
                             style={{
                                 color: "var(--on-surface-variant)",
                                 backgroundColor: "transparent",
@@ -58,7 +60,7 @@ const Navbar = () => {
                                         exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
                                         transition={{ duration: 0.25 }}
                                     >
-                                        <FiMoon className="w-5 h-5" />
+                                        <MdOutlineSettings className="h-5 w-5" />
                                     </motion.div>
                                 ) : (
                                     <motion.div
@@ -76,7 +78,7 @@ const Navbar = () => {
 
                         {/* User Icon */}
                         <FaRegUserCircle
-                            className="w-5 h-5 cursor-pointer transition-colors duration-200 hover:opacity-70"
+                            className="w-4.5 h-4.5 cursor-pointer transition-colors duration-200 hover:opacity-70"
                             style={{ color: "var(--on-surface)" }}
                             onClick={() => navigate("/signup")}
                         />

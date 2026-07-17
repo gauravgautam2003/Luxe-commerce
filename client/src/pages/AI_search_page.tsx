@@ -28,12 +28,11 @@ const AI_search_page = () => {
                         <p>Back</p>
                     </div>
 
-                
+
 
                     {/* Main Search Area */}
                     <div className="flex flex-1 flex-col">
-                        <motion.div
-                            className="flex-1 h-[calc(100vh-3.05rem)] px-3 py-4 sm:px-5 sm:py-7 theme-transition"
+                        <motion.div className=""
                             style={{
                                 backgroundColor: "var(--surface-container-low)",
                             }}
@@ -41,10 +40,8 @@ const AI_search_page = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.35, delay: 0.12, ease: "easeOut" }}
                         >
-                            <div className="flex h-full flex-col items-center justify-start gap-2 sm:gap-6 px-2 sm:px-0">
-                                <div className="mx-auto flex h-full w-full max-w-5xl flex-col">
-                                    <AIChatSearchbar />
-                                </div>
+                            <div>
+                                <AIChatSearchbar />
                             </div>
                         </motion.div>
                     </div>
