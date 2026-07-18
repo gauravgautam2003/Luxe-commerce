@@ -8,6 +8,7 @@ import Admin_panel_page from "../pages/Admin_form";
 import SignupPage from "../pages/Signup_page";
 import AI_search_page from "../pages/AI_search_page";
 import AddProducts from "../pages/Add_product.page";
+import Product_collection from "../pages/Product_collection";
 
 const homeRoute = () => {
     return (
@@ -22,6 +23,7 @@ const homeRoute = () => {
                 <Route path="/track" element={<Delivery_tracking_page />} />
                 <Route path="/admin" element={<Admin_panel_page />} />
                 <Route path="/signup" element={<SignupPage />} />
+                <Route path="/collection" element={<Product_collection/>} />
             </Routes>
         </div>
     );
