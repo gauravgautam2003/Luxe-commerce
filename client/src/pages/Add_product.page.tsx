@@ -3,17 +3,23 @@ import addProductHook from "../hooks/addProduct.hooks";
 
 const AddProducts = () => {
 
-    const { productImage, setProductImage,
-        productName, setProductName,
-        productDescription, setProductDescription,
-        productCategory, setProductCategory,
-        productPrice, setProductPrice,
-        productOfferPrice, setProductOfferPrice,
-        handleProductsForm } = addProductHook();
+    const {
+        productImage,
+        productName,
+        setProductName,
+        productDescription,
+        setProductDescription,
+        productCategory,
+        selectedCategory,
+        setSelectedCategory,
+        productPrice,
+        setProductPrice,
+        productOfferPrice,
+        setProductOfferPrice,
+        handleProductsForm,
+        handleImageChange,
+    } = addProductHook();
 
-        const imageHandler = () => {
-            
-        }
     return (
 
         <>
@@ -43,13 +49,13 @@ const AddProducts = () => {
                                             accept="image/*"
                                             type="file"
                                             id={`image${index}`}
-
                                             hidden
+                                            onChange={handleImageChange}
                                         />
                                         <img
                                             className="max-w-29 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/e-commerce/uploadArea.png"
-                                            alt="uploadArea"
+                                            src={productImage || "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/e-commerce/uploadArea.png"}
+                                            alt={productImage ? "Selected product" : "Upload area"}
                                             width={200}
                                             height={200}
                                         />
@@ -104,6 +110,8 @@ const AddProducts = () => {
                                 </label>
                                 <select
                                     id="category"
+                                    value={selectedCategory}
+                                    onChange={(e) => setSelectedCategory(e.target.value)}
                                     className="outline-none focus:ring-2 ring-blue-600 md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
                                 >
                                     <option
@@ -135,6 +143,8 @@ const AddProducts = () => {
                                         id="product-price"
                                         type="number"
                                         placeholder="0"
+                                        value={productPrice}
+                                        onChange={(e) => setProductPrice(Number(e.target.value))}
                                         className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40"
 
                                     />
@@ -152,6 +162,8 @@ const AddProducts = () => {
                                         id="offer-price"
                                         type="number"
                                         placeholder="0"
+                                        value={productOfferPrice}
+                                        onChange={(e) => setProductOfferPrice(Number(e.target.value))}
                                         className="outline-none md:py-2.5 py-2 px-3 rounded border focus:ring-2 ring-blue-600 border-gray-500/40"
 
                                     />
