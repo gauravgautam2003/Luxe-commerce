@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Arrivals_button from "./buttons/Arrivals_button";
-import Explore_button from "./buttons/Explore_button";
 import ImageSlide from "./ImageSlide";
 
 

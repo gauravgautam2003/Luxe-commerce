@@ -1,4 +1,4 @@
-import { FiGift, FiMic, FiSearch, FiSend, FiTrash2, FiTrendingDown, FiZap } from "react-icons/fi";
+import { FiMic, FiSend, FiTrash2 } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
