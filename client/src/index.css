@@ -4,8 +4,8 @@
 
 :root {
     /* ── Primary ── */
-    --primary: #004ac6;
-    --primary-container: #2563eb;
+    --primary: #922eb9;
+    --primary-container: #802ba7;
     --on-primary: #ffffff;
     --on-primary-container: #eeefff;
     --inverse-primary: #b4c5ff;
@@ -44,7 +44,7 @@
     --error-container: #ffdad6;
 
     /* ── Background ── */
-    --background: #f7f9fb;
+    --background: #f1f2f3;
     --on-background: #191c1e;
 
     /* ── Elevation Shadows ── */
@@ -74,11 +74,11 @@
 
 /* ─── Dark Theme ─── */
 [data-theme="dark"] {
-    --primary: #b4c5ff;
-    --primary-container: #003ea8;
+    --primary: #983ac4;
+    --primary-container: #8c28bb;
     --on-primary: #00174b;
     --on-primary-container: #dbe1ff;
-    --inverse-primary: #004ac6;
+    --inverse-primary: #8128b4;
 
     --secondary: #bec6e0;
     --on-secondary: #131b2e;

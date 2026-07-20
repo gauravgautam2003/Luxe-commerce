@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
                         {/* Brand Column */}
                         <div className="md:col-span-2">
-                            <h3 className="text-base font-extrabold tracking-tight mb-4 text-blue-600" style={{ fontFamily: "'Geist', sans-serif" }}>
+                            <h3 className="text-base font-bold tracking-tight mb-4 text-purple-800" style={{ fontFamily: "'Geist', sans-serif" }}>
                                 LUXE
                             </h3>
                             <p className="text-xs leading-relaxed max-w-xs mb-4" style={{ color: "var(--on-surface-variant)" }}>

@@ -23,17 +23,17 @@ const Shopping_bag_page = () => {
     };
 
     return (
-        <div className="w-full min-h-screen py-8 flex justify-center theme-transition" style={{ backgroundColor: "var(--background)" }}>
+        <div className="w-full min-h-screen py-4 flex justify-center theme-transition" style={{ backgroundColor: "var(--background)" }}>
             <div className="w-[90%] max-w-7xl">
                 <button
                     onClick={() => navigate("/")}
-                    className="flex items-center gap-1.5 text-xs font-semibold mb-4 cursor-pointer hover:opacity-85 transition-opacity"
-                    style={{ color: "var(--primary-container)" }}
+                    className="flex items-center border-2 rounded-md py-2 px-2 border-gray-400 gap-1.5 text-xs font-semibold mb-3 cursor-pointer hover:opacity-85 transition-opacity"
+                    
                 >
                     <FiArrowLeft className="w-3.5 h-3.5" />
-                    Back to Shop
+                    Back
                 </button>
-                <h1 className="text-xl sm:text-2xl font-bold tracking-tight mb-1" style={{ color: "var(--on-surface)", fontFamily: "'Geist', sans-serif" }}>
+                <h1 className="text-xl sm:text-2xl font-light tracking-tight mb-1" style={{ color: "var(--primary)"}}>
                     Shopping Bag
                 </h1>
                 <p className="text-xs mb-8" style={{ color: "var(--on-surface-variant)" }}>

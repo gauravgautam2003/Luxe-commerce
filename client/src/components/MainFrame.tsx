@@ -19,7 +19,7 @@ const MainFrame = () => {
                 <div className="absolute inset-0 z-10 flex items-start justify-start">
                     <div className="lg:mx-10 mx-4 sm:mx-6 flex flex-col justify-center h-[calc(100vh-3.05rem)]">
                         <div
-                            className="text-[10px] sm:text-xs px-3 py-2 sm:px-4 sm:py-2.5 w-fit rounded-full font-medium tracking-wide border border-blue-400 bg-blue-500"
+                            className="text-[12px] sm:text-xs px-3 py-2 sm:px-4 sm:py-2.5 w-fit  font-bold tracking-wide border border-purple-400 shadow-lg shadow-purple-400"
                         >
                             SUMMER COLLECTION 2026
                         </div>
@@ -36,21 +36,12 @@ const MainFrame = () => {
 
                         <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-6 sm:mt-8">
                             <button onClick={() => navigate("/collection")}
-                                className="rounded-md px-2 py-1.5 text-[14px] transition bg-white text-gray-600 font-semibold"
+                                className="rounded-lg shadow-md shadow-purple-300 px-2 py-1.5 text-[14px] transition bg-white text-gray-600 font-semibold"
                                 style={{
                                     border: "1px solid var(--outline-variant)",
                                 }}
                             >
                                 Explore Collections
-                            </button>
-                            <button
-                                className="rounded-md px-2 py-1.5 text-[10px] font-medium transition"
-                                style={{
-                                    backgroundColor: "var(--primary)",
-                                    color: "var(--on-primary)",
-                                }}
-                            >
-                                New Arrivals
                             </button>
                         </div>
                     </div>
