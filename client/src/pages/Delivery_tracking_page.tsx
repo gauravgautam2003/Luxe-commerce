@@ -70,11 +70,11 @@ const Delivery_tracking_page = () => {
                             <div>
                                 <button
                                     onClick={() => navigate("/orders")}
-                                    className="flex items-center gap-1.5 text-xs font-semibold mb-4 cursor-pointer hover:opacity-85 transition-opacity"
+                                    className="flex items-center gap-1.5 border-2 border-gray-400 rounded-md py-2 px-3 text-xs font-semibold mb-4 cursor-pointer hover:opacity-85 transition-opacity"
                                     style={{ color: "var(--primary-container)" }}
                                 >
                                     <FiArrowLeft className="w-3.5 h-3.5" />
-                                    Back to Orders
+                                    Back
                                 </button>
                                 <span className="bg-blue-600 text-white text-[9px] uppercase font-bold px-2 py-0.5 rounded">
                                     Out for Delivery

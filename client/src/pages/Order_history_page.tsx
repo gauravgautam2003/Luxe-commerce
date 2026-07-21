@@ -64,11 +64,10 @@ const Order_history_page = () => {
                 <div className="lg:col-span-3 space-y-8">
                     <button
                         onClick={() => navigate("/")}
-                        className="flex items-center gap-1.5 text-xs font-semibold cursor-pointer hover:opacity-85 transition-opacity"
-                        style={{ color: "var(--primary-container)" }}
+                        className="flex items-center gap-1.5 border-2 border-gray-400 py-2 px-3 rounded-md text-xs font-semibold cursor-pointer hover:opacity-85 transition-opacity"
                     >
                         <FiArrowLeft className="w-3.5 h-3.5" />
-                        Back to Shop
+                        Back
                     </button>
                     {/* Header with Search */}
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">

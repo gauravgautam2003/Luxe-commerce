@@ -44,11 +44,11 @@ const Product_detail_page = () => {
                 {/* Back button */}
                 <button
                     onClick={() => navigate("/")}
-                    className="flex items-center gap-2 mb-6 text-xs font-medium cursor-pointer hover:opacity-85 transition-opacity"
+                    className="flex items-center gap-2 border-2 border-gray-400 py-2 px-3 rounded-md mb-4 text-xs font-medium cursor-pointer hover:opacity-85 transition-opacity"
                     style={{ color: "var(--on-surface-variant)" }}
                 >
                     <FiArrowLeft className="w-3.5 h-3.5" />
-                    Back to Catalog
+                    Back
                 </button>
 
                 {/* Breadcrumbs */}
