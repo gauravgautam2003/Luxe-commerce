@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getProducts, getProductById } from "../controllers/product.controller.js";
+import { getProducts, getProductById, createProduct } from "../controllers/product.controller.js";
 
 const productRouter = Router();
 
@@ -9,7 +9,6 @@ const productRouter = Router();
  * @desc Get all products or filter by productType
  * @access Public
  */
-
 productRouter.get("/", getProducts);
 
 /**
@@ -19,5 +18,13 @@ productRouter.get("/", getProducts);
  * @access Public
  */
 productRouter.get("/:id", getProductById);
+
+/**
+ * name: createProduct
+ * @route POST /api/products
+ * @desc Create a new product
+ * @access Public
+ */
+productRouter.post("/", createProduct);
 
 export default productRouter;
