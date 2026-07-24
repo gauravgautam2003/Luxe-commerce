@@ -260,10 +260,10 @@ const AIChatSearchbar = () => {
                                 >
                                     <div className={`${message.role === "user" ? "text-right" : "text-left"}`}>
                                         <div
-                                            className="rounded-xl px-3.5 py-2.5 text-xs leading-relaxed sm:text-xs"
+                                            className="rounded-lg  px-4 text-gray-300 font-semibold py-1 text-xs leading-relaxed sm:text-xs"
                                             style={{
-                                                backgroundColor: message.role === "user" ? "var(--primary)" : "var(--surface-container-low)",
-                                                color: message.role === "user" ? "var(--on-primary)" : "var(--on-surface)",
+                                                
+                                                color: message.role === "user" ? "var(--on-surface)" : "var(--on-surface)",
                                                 fontFamily: "'Inter', sans-serif",
                                             }}
                                         >
@@ -294,7 +294,7 @@ const AIChatSearchbar = () => {
                                                         <img
                                                             src={product.image}
                                                             alt={product.name}
-                                                            className="h-12 w-12 flex-none rounded-lg object-cover sm:h-14 sm:w-14"
+                                                            className="h-20 w-20 flex-none rounded-lg object-cover sm:h-20 sm:w-20"
                                                         />
                                                         <span className="min-w-0">
                                                             <span
